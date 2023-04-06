@@ -1,0 +1,156 @@
+body {
+    background-color: white;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+header {
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    background-color: #1D1D1D;
+    height: 15vh;
+    align-items: center;
+}
+
+header div {
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav {
+    margin: 30px;
+    padding: 10px;
+}
+
+.nav a {
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.nav a:hover {
+    opacity: 0.7;
+}
+
+main {
+    height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact {  
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    padding: 10px;
+    margin: auto;
+    width: 30vw;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.card p i {
+    font-size: 1.1em;
+}
+
+.card p i:hover {
+    transform: none;
+    opacity: 1;
+}
+
+.card i {
+    color: black;
+    padding: 30px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 2.2em;
+}
+
+.card i:hover {
+    transform: scale(1.1);
+    opacity: 0.7;
+}
+
+footer {
+    background-color: #1D1D1D;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    height: 10vh;
+}
+
+footer div {
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    opacity: 0.7;
+}
+
+footer i {
+    font-size: 1.5em;
+    color: white;
+    padding: 30px;
+    width: 10px;
+    text-align: center;
+    text-decoration: none;
+}
+
+footer i:hover {
+    opacity: 0.7;
+    text-decoration: none;
+    transform: scale(1.1)
+;}
+
+/* MOBILE */
+@media (max-width: 767px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav a {
+        margin: 10px;
+    }
+
+    .card {
+        width: 60vw;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+}
